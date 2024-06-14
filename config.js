@@ -108,7 +108,7 @@ class Config {
             await this.initia.sendTokenToOtherLayer(
               BridgeID.CIVITA,
               COIN.INIT,
-              1,
+              0.4,
               "bridge"
             );
             console.log();
@@ -120,7 +120,7 @@ class Config {
             await this.initia.sendTokenToOtherLayer(
               BridgeID.TUCANA,
               COIN.INIT,
-              1,
+              0.3,
               "bridge"
             );
             console.log();
@@ -132,7 +132,7 @@ class Config {
             await this.initia.sendTokenToOtherLayer(
               BridgeID.INITAI,
               COIN.INIT,
-              1,
+              0.5,
               "bridge"
             );
             console.log();
@@ -145,7 +145,7 @@ class Config {
             await this.initia.sendTokenToOtherLayer(
               BridgeID.NOON,
               COIN.TIA,
-              0.1,
+              0.01,
               "transfer"
             );
             console.log();
@@ -158,7 +158,7 @@ class Config {
             await this.initia.sendTokenToOtherLayer(
               BridgeID.BLACKWING,
               COIN.USDC,
-              1,
+              0.1,
               "transfer"
             );
             console.log();
@@ -171,7 +171,7 @@ class Config {
             await this.initia.sendTokenToOtherLayer(
               BridgeID.TUCANA,
               COIN.TUCANA,
-              5,
+              0.5,
               "transfer"
             );
             console.log();
@@ -184,7 +184,7 @@ class Config {
             await this.initia.sendTokenToOtherLayer(
               BridgeID.MINIMOVE,
               COIN.ETH,
-              0.0001,
+              0.00001,
               "transfer"
             );
             console.log();
