@@ -93,7 +93,7 @@ class Initia extends InitiaSigner {
       var args = [
         initia.bcs.address().serialize(liq).toBase64(),
         initia.bcs.address().serialize(firstMetadata).toBase64(),
-        initia.bcs.u64().serialize(1000000).toBase64(), // 1 INITIA
+        initia.bcs.u64().serialize(200000).toBase64(), // 1 INITIA
       ];
       const firstSim = await this.lcd.move.viewFunction(
         "0x1",
@@ -175,7 +175,7 @@ class Initia extends InitiaSigner {
       const msg = new initia.MsgSend(
         this.address, // sender address
         AppConstant.RECEIVERWALLETADDRESS, // recipient address
-        "1000000uinit" // 1 Init
+        "200000uinit" // 1 Init
       );
 
       await this.signAndBroadcast(msg)
@@ -367,7 +367,7 @@ class Initia extends InitiaSigner {
   async sendTokenToOtherLayer(
     bridgeId,
     coin = COIN.INIT,
-    amount = 1,
+    amount = 0.2,
     method = ""
   ) {
     try {
