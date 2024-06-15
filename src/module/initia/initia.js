@@ -26,8 +26,8 @@ class Initia extends InitiaSigner {
     const key = new initia.RawKey(Uint8Array.from(privateKeyBytes));
     const lcd = new initia.LCDClient(`https://lcd.${chainId}.initia.xyz`, {
       chainId: chainId,
-      gasPrices: `0.15${COIN.GAS}`,
-      gasAdjustment: "2.0",
+      gasPrices: `0.09${COIN.GAS}`,
+      gasAdjustment: "1.5",
     });
     const wallet = new initia.Wallet(lcd, key);
 
