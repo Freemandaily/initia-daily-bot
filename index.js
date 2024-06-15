@@ -16,7 +16,7 @@ async function doQuest(walletAddress, privateKey) {
       const initAi = new InitAi(walletAddress, privateKey);
 
       await initia.checkGas().then(async (gasBalance) => {
-        if (gasBalance / 1000000 < 5) {
+        if (gasBalance / 1000000 < 0.1) {
           reject(
             `Account ${walletAddress} GAS Token is not enough, min balance is 5 GAS`
           );
